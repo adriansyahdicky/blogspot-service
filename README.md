@@ -37,6 +37,21 @@ curl --location 'http://localhost:8282/api/auth/login' \
     "username": "dicky.adriansyah",
     "password": "dicky123"
 }'
-disini kita akan mendapatkan token <br/>
+disini kita akan mendapatkan token
 ![image](https://github.com/adriansyahdicky/blogspot-service/assets/54537198/36635bba-8611-4470-b68e-a2a425935d92)
+
+3. Run Postman Endpoint create blog <br/>
+ini curlnya <br/>
+curl --location 'http://localhost:8282/api/blogs' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWNreS5hZHJpYW5zeWFoIiwiaWF0IjoxNzEzOTMwMjM0LCJleHAiOjE3MTM5MzM4MzR9.7H-IRGBkrY4lZPFkyVetIKNV6Rd9FxusdFguAXIvS1s' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: JSESSIONID=1B0E752F732CA9C85247286A933B24C1' \
+--data '{
+    "title":"One Piece",
+    "body": "Luffy, Zoro, Nami"
+}'
+![image](https://github.com/adriansyahdicky/blogspot-service/assets/54537198/014a0b75-0772-4334-948a-5f29ffc32cfa)
+
+
+
 
