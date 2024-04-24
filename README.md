@@ -27,7 +27,7 @@ curl --location 'http://localhost:8282/api/auth/create' \
     "password":"dicky123"
 }'
 ![image](https://github.com/adriansyahdicky/blogspot-service/assets/54537198/00f0cfe1-ae39-4f4e-8d66-7572feca6452)
-<br/>
+
 2. Run Postman Endpoint Login <br/>
 ini curlnya <br/>
 curl --location 'http://localhost:8282/api/auth/login' \
@@ -38,6 +38,7 @@ curl --location 'http://localhost:8282/api/auth/login' \
     "password": "dicky123"
 }'
 disini kita akan mendapatkan token
+
 ![image](https://github.com/adriansyahdicky/blogspot-service/assets/54537198/36635bba-8611-4470-b68e-a2a425935d92)
 
 3. Run Postman Endpoint create blog <br/>
@@ -51,6 +52,15 @@ curl --location 'http://localhost:8282/api/blogs' \
     "body": "Luffy, Zoro, Nami"
 }'
 ![image](https://github.com/adriansyahdicky/blogspot-service/assets/54537198/014a0b75-0772-4334-948a-5f29ffc32cfa)
+
+
+4. Run Postman Endpoint Get Blogs <br/>
+ini crulnya <br/>
+curl --location 'http://localhost:8282/api/blogs?sort_field=title&sort_direction=asc' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaWNreS5hZHJpYW5zeWFoIiwiaWF0IjoxNzEzOTMwMjM0LCJleHAiOjE3MTM5MzM4MzR9.7H-IRGBkrY4lZPFkyVetIKNV6Rd9FxusdFguAXIvS1s' \
+--header 'Cookie: JSESSIONID=1B0E752F732CA9C85247286A933B24C1'
+
+![image](https://github.com/adriansyahdicky/blogspot-service/assets/54537198/b8a7da06-e6be-4650-b6b2-3b8ae06c58bb)
 
 
 
